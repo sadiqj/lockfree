@@ -3,14 +3,61 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
 <link title="Index of modules" rel=Appendix href="index_modules.html">
-<link title="Lockfree" rel="Chapter" href="Lockfree.html"><title>Index of values</title>
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Lockfree" rel="Chapter" href="Lockfree.html">
+<link title="Lf_msqueue" rel="Chapter" href="Lf_msqueue.html"><title>Index of values</title>
 </head>
 <body>
 <div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
 &nbsp;</div>
 <h1>Index of values</h1>
 <table>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALclean_until">clean_until</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+<code class="code">clean_until q f</code> drops the prefix of the queue until the element <code class="code">e</code>,
+      where <code class="code">f e</code> is <code class="code"><span class="keyword">true</span></code>.
+</div>
+</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALcreate">create</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+Create a new queue, which is initially empty.
+</div>
+</td></tr>
+<tr><td align="left"><br>I</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALis_empty">is_empty</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+<code class="code">is_empty q</code> returns empty if <code class="code">q</code> is empty.
+</div>
+</td></tr>
+<tr><td align="left"><br>N</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALnext">next</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+<code class="code">next c</code> returns <code class="code"><span class="constructor">Some</span> (e, c')</code> where <code class="code">e</code> is the head of the queue and
+      <code class="code">c'</code> is the tail, if the queue is non-empty.
+</div>
+</td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALpop">pop</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+<code class="code">pop q</code> pops an element <code class="code">e</code> from the front of the queue and returns 
+      <code class="code"><span class="constructor">Some</span> v</code> if the queue is non-empty.
+</div>
+</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALpush">push</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+<code class="code">push q v</code> pushes <code class="code">v</code> to the back of the queue.
+</div>
+</td></tr>
+<tr><td align="left"><br>S</td></tr>
+<tr><td><a href="Lf_msqueue.S.html#VALsnapshot">snapshot</a> [<a href="Lf_msqueue.S.html">Lf_msqueue.S</a>]</td>
+<td><div class="info">
+Obtain a snapshot of the queue.
+</div>
+</td></tr>
 </table>
 </body>
 </html>
